@@ -1,0 +1,181 @@
+<html>
+
+<head>
+    <title>Membuat Image Slider Menggunakan jQuery</title>
+    <meta name="description" content="Sederhana dan sangat powerful:Slide slider" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Instalasi font Lato dari Google -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700" />
+
+    <!-- Include jQuery -->
+    <script src="src/jquery-3.6.0.js"></script>
+    <script src="src/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Include the slider scripts -->
+    <script src="src/jquery.simpleslider.js"></script>
+    <script src="src/backstretch.js"></script>
+    <script src="src/custom.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+    <!-- Awal header -->
+    <header id="top">
+        <div id="logo">
+            <span class="logo">Slider menggunakan jQuery</span><span class="dynamic"></span>
+        </div>
+    </header>
+    <!-- Akhir header -->
+    <!-- Awal pagewrap -->
+    <div class="pagewrap">
+        <!-- Awal fb -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v11.0" nonce="wY71aW41"></script>
+
+        <div class="fb-like" data-href="https://www.facebook.com/Zikrian-104660788609406" data-layout="button_count"
+            data-action="like" data-show-faces="false" data-size="small" data-share="true"></div>
+        <!-- Akhir fb -->
+        <!-- Awal githubbuttons -->
+        <div class="githubbuttons">
+            <a class="github-button" href="https://github.com/ntkme/github-buttons/subscription" data-icon="octicon-eye"
+                aria-label="Watch ntkme/github-buttons on GitHub">Watch</a>
+            <a class="github-button" href="https://github.com/ntkme/github-buttons/fork" data-icon="octicon-repo-forked"
+                aria-label="Fork ntkme/github-buttons on GitHub">Fork</a>
+            <a class="github-button" href="https://github.com/Zikrian" aria-label="Follow @Zikrian on GitHub">Follow
+                @Zikrian</a> </div>
+        <!-- Akhir githubbuttons -->
+        <!-- Awal pageblock fullscreen -->
+        <div class="pageblock" id="fullscreen">
+            <!-- Awal slider -->
+            <div class="slider">
+                <!-- Awal slide satu -->
+                <div class="slide" id="satu">
+                    <div class="slidecontent">
+                        <span class="headersur">Sangat powerfull dan sederhana diwaktu yang sama</span>
+                        <h1>SLIDE PERTAMA</h1>
+                        <div class="button" onclick="mainslider.nextSlide();">
+                            Lihat betapa sederhananya
+                        </div>
+                    </div>
+                </div>
+                <!-- Akhir slide satu -->
+                <!-- Awal slide dua -->
+                <div class="slide" id="dua">
+                    <div class="slidecontent">
+                        <span class="headersur">
+                            <br />
+                            <br />
+                            Masukkan semua disini</span>
+                        <h1>SLIDE KEDUA</h1>
+                        <div class="text">
+                            <p>
+                                Siapkan dan download file simpleslider.js,
+                                jquery.touchswipe.js dan transit.js
+                            </p>
+                            <xmp>
+                                <script src="src/jquery-3.6.0.js"></script>
+                                <script src="src/jquery-migrate-1.2.1.min.js"></script>
+                                <script src="src/transit.js"></script>
+                                <script src="src/jquery.touchSwipe.js"></script>
+                                <script src="src/jquery.simpleslider.js"></script>
+                            </xmp>
+
+                            <div class="button" onclick="mainslider.nextSlide();">
+                                Sudah? Ayo Lanjutkan!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Akhir slide dua -->
+                <!-- Awal slide tiga -->
+                <div class="slide" id="tiga">
+                    <div class="slidecontent">
+                        <span class="headersur">Sudah siap?</span>
+                        <h1>Langkah Berikutnya</h1>
+                        <div class="text">
+                            <p>
+                                Masukkan kode ini di HTML, cek
+                                <a href="https://github.com/Zikrian/Jquery-Plugin" target="_BLANK">Github README</a>
+                                Contoh HTML.
+                            </p>
+                            <xmp>
+                                $(document).ready(function(){
+                                $(".slider").simpleSlider();
+                                });
+                            </xmp>
+
+                            <div class="button" onclick="mainslider.nextSlide();">
+                                Selesai? Lanjutkan lagi!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Akhir slide tiga -->
+                <!-- Awal slide empat -->
+                <div class="slide" id="empat">
+                    <div class="slidecontent">
+                        <span class="headersur">Belum Selesai</span>
+                        <h1>SLIDE KEEMPAT</h1>
+                        <div class="text">
+                            <p>Slider Masih ada lagi!</p>
+
+                            <div class="button" onclick="mainslider.nextSlide();">CEK</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Akhir slide empat -->
+
+                <!-- Awal slide lima -->
+                <div class="slide" id="lima">
+                    <div class="slidecontent">
+                        <span class="headersur">Ternyata Masih Ada !</span>
+                        <h1>SLIDER KELIMA</h1>
+                        <div class="text">
+                            <p>Apakah Masih Ada lagi!</p>
+
+                            <div class="button" onclick="mainslider.nextSlide();">
+                                Lanjut
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Akhir slide lima -->
+
+                <!-- Awal slide enam -->
+                <div class="slide" id="enam">
+                    <div class="slidecontent">
+                        <span class="headersur">Sudah Selesai</span>
+                        <h1>LIHAT</h1>
+                        <div class="text">
+                            <p>Slider Sudah Selesai, Mau lihat opsi yang lain?</p>
+                            <p>
+                                Ada methods, triggers dan tracker yang bisa dikonfigurasikan
+                            </p>
+
+                            <div class="button">
+                                <a href="https://github.com/Zikrian/Jquery-Plugin" target="_BLANK">Cek</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Akhir slide enam -->
+            </div>
+            <!-- Akhir slider -->
+        </div>
+        <!-- Akhir pageblock fullscreen -->
+
+        <!-- Awal copyright -->
+        <div class="copy">
+            Project:
+            <a href="https://www.facebook.com/zikrian.smile/" rel="publisher">Zikrian</a>
+            |Github: 
+            <a href="https://github.com/Zikrian">Zikrian</a>
+        </div>
+        <!-- Akhir copyright -->
+    </div>
+    <!-- Akhir pagewrap -->
+</body>
+
+</html>
